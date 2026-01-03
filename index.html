@@ -1,3 +1,15 @@
+Conversation opened. 1 read message.
+
+Skip to content
+Using Gmail with screen readers
+10 of 5,093
+(no subject)
+Inbox
+
+Thrisha Thangaraj <thrishathangaraj@gmail.com>
+08:16 (2 hours ago)
+to me
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -156,7 +168,7 @@ document.addEventListener('change', function(e) {
         // 4. Admin Functions
         function checkAdmin() {
             const pass = prompt("Enter Secret Admin Password:");
-            if (pass === "naga") {
+            if (pass === "Thrish18") {
                 isAdmin = true;
                 document.getElementById('admin-panel').classList.remove('hidden');
                 renderProducts(storedProducts);
@@ -170,18 +182,6 @@ document.addEventListener('change', function(e) {
             renderProducts(storedProducts);
         }
 
-
-
-
-            if (name && price) {
-                const newP = { id: Date.now(), name, price, category, img: "https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=600", hoverImg: "https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=600" };
-                storedProducts.push(newP);
-                localStorage.setItem('luxe_inventory', JSON.stringify(storedProducts));
-                renderProducts(storedProducts);
-                document.getElementById('admin-name').value = "";
-                document.getElementById('admin-price').value = "";
-            }
-        }
         function addNewProduct() {
             const name = document.getElementById('admin-name').value;
             const price = parseFloat(document.getElementById('admin-price').value);
@@ -275,6 +275,5 @@ document.addEventListener('change', function(e) {
     
 </body>
 </html>
-
 
 
